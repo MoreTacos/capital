@@ -49,17 +49,17 @@
     }
   }
   #card {
-    height: 100%;
+    height: 90%;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 2rem;
     align-items: center;
     justify-content: center;
   }
 }
 
 #button {
+  padding: 2rem;
   display: inline-block;
   button {
     border: none;
