@@ -10,7 +10,7 @@ const InputBar = ({ current, newCountry }) => {
   return (
     <div>
       <form>
-        <label htmlFor="enter-capital">Enter capital</label>
+        <label htmlFor="enter-capital">Enter capital </label>
         <input onChange={onInputChange} id="enter-capital" type="text"></input>
       </form>
     </div>
