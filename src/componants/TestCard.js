@@ -10,6 +10,7 @@ class TestCard extends React.Component {
   };
   newCountry = async () => {
     let data = await capital.get();
+    console.log(data);
     data = data.data.map(country => {
       return country;
     });

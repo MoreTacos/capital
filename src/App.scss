@@ -28,6 +28,15 @@
 
 #input-bar {
   grid-column: span 3 / 4;
+  label {
+    font-size: 2rem;
+  }
+  input {
+    border-bottom: 1px solid black;
+    background: lightblue;
+    height: 2rem;
+    font-size: 2rem;
+  }
 }
 
 #card {
