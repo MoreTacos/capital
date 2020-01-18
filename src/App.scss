@@ -1,0 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  height: 10vh;
+  background: lightblue;
+  p {
+    text-align: center;
+    padding: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 4rem;
+  }
+}
+
+.test-card {
+  color: red;
+}
