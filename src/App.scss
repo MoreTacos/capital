@@ -5,17 +5,8 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.title {
-  height: 10vh;
-  background: lightblue;
-  p {
-    text-align: center;
-    padding: 1rem;
-    font-size: 4rem;
-  }
-}
-
 #score {
+  color: white;
   font-size: 3rem;
   span {
     font-size: 4rem;
@@ -24,11 +15,15 @@
 
 #country-name {
   grid-column: span 5 / 6;
+  font-size: 3rem;
+  font-style: italic;
+  color: white;
 }
 
 #input-bar {
   grid-column: span 3 / 4;
   label {
+    color: white;
     font-size: 2rem;
   }
   input {
@@ -39,14 +34,29 @@
   }
 }
 
-#card {
-  text-align: center;
-  height: 90vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 2rem;
-  align-items: center;
-  justify-content: center;
+#main-card {
+  height: 100vh;
+  background: url('./toronto.png') repeat center center/cover;
+  #title {
+    padding: 0.5rem;
+    a {
+      color: white;
+      font-style: bold;
+      text-decoration: none;
+    }
+    a:hover {
+      color: #c2c2c2;
+    }
+  }
+  #card {
+    height: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 #button {

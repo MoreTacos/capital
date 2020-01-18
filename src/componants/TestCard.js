@@ -25,17 +25,25 @@ class TestCard extends React.Component {
 
   render() {
     return (
-      <div id="card">
-        <div id="button">
-          <button onClick={this.newCountry}>Get Country</button>
+      <div id="main-card">
+        <div id="title">
+          <a href="#">Capital Guesser</a>
         </div>
-        <div id="score">
-          <span>Score:</span> {this.state.score}
+        <div id="card">
+          <div id="button">
+            <button onClick={this.newCountry}>Get Country</button>
+          </div>
+          <div id="score">
+            <span>Score:</span> {this.state.score}
+          </div>
+          <div id="input-bar">
+            <InputBar
+              current={this.state.current}
+              newCountry={this.plusScore}
+            />
+          </div>
+          <div id="country-name">{this.state.current.name}</div>
         </div>
-        <div id="input-bar">
-          <InputBar current={this.state.current} newCountry={this.plusScore} />
-        </div>
-        <div id="country-name">{this.state.current.name}</div>
       </div>
     );
   }
