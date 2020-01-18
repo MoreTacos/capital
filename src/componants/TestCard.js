@@ -1,7 +1,6 @@
 import React from 'react';
 import capital from '../apis/capital';
 import InputBar from './InputBar';
-// import Score from './Score';
 
 class TestCard extends React.Component {
   state = { current: {}, score: 0 };
@@ -25,13 +24,17 @@ class TestCard extends React.Component {
 
   render() {
     return (
-      <div>
-        <div>
+      <div id="card">
+        <div id="button">
           <button onClick={this.newCountry}>Get Country</button>
         </div>
-        <InputBar current={this.state.current} newCountry={this.plusScore} />
-        <div>{this.state.score}</div>
-        <div>{this.state.current.name}</div>
+        <div id="score">
+          <span>>Score:</span> {this.state.score}
+        </div>
+        <div id="input-bar">
+          <InputBar current={this.state.current} newCountry={this.plusScore} />
+        </div>
+        <div id="country-name">{this.state.current.name}</div>
       </div>
     );
   }
