@@ -29,7 +29,7 @@ class TestCard extends React.Component {
           <button onClick={this.newCountry}>Get Country</button>
         </div>
         <div id="score">
-          <span>>Score:</span> {this.state.score}
+          <span>Score:</span> {this.state.score}
         </div>
         <div id="input-bar">
           <InputBar current={this.state.current} newCountry={this.plusScore} />

@@ -15,25 +15,17 @@
   }
 }
 
-.test-card {
-  color: red;
-}
-
 #score {
-  color: red;
   span {
-    color: grey;
   }
 }
 
 #country-name {
-  color: green;
   grid-column: span 5 / 6;
 }
 
 #input-bar {
   grid-column: span 3 / 4;
-  color: yellow;
 }
 
 #card {
