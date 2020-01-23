@@ -1,5 +1,7 @@
 import React from 'react';
 
+// Main Input Bar
+
 const InputBar = ({ current, newCountry }) => {
   const onInputChange = event => {
     if (event.target.value === current.capital) {
