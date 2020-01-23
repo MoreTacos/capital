@@ -2,6 +2,8 @@ import React from 'react';
 import capital from '../apis/capital';
 import InputBar from './InputBar';
 
+// MAIN CARD
+
 class TestCard extends React.Component {
   state = { current: {}, score: 0 };
   plusScore = () => {
