@@ -1,3 +1,4 @@
+// Index JS file
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './componants/App';
